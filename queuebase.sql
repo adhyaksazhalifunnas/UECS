@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2021 at 03:42 AM
+-- Generation Time: Apr 10, 2021 at 03:59 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -38,7 +38,7 @@ CREATE TABLE `tr_guest` (
 --
 
 INSERT INTO `tr_guest` (`id`, `GuestName`, `Admin`) VALUES
-(1, 'Bangsat 1', 'ADMIN'),
+(1, 'Haloo', 'ADMIN'),
 (2, 'Hasyidan', 'ADMIN'),
 (3, 'Test User 3', 'ADMIN'),
 (4, 'Adhyaksa', 'ADMIN'),
@@ -52,7 +52,9 @@ INSERT INTO `tr_guest` (`id`, `GuestName`, `Admin`) VALUES
 (12, 'Guest', 'ADMIN'),
 (13, 'Bebek', 'ADMIN'),
 (14, 'Guest', 'ADMIN'),
-(15, 'AdhyaksaZ', 'ADMIN');
+(15, 'AdhyaksaZ', 'ADMIN'),
+(16, 'Baru1', 'ADMIN'),
+(17, 'Baru2', NULL);
 
 --
 -- Indexes for dumped tables
@@ -72,7 +74,7 @@ ALTER TABLE `tr_guest`
 -- AUTO_INCREMENT for table `tr_guest`
 --
 ALTER TABLE `tr_guest`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
