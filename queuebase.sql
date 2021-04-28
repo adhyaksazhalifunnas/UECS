@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2021 at 03:59 AM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 8.0.3
+-- Waktu pembuatan: 29 Apr 2021 pada 00.52
+-- Versi server: 10.4.18-MariaDB
+-- Versi PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tr_guest`
+-- Struktur dari tabel `tr_guest`
 --
 
 CREATE TABLE `tr_guest` (
@@ -34,47 +34,24 @@ CREATE TABLE `tr_guest` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `tr_guest`
---
-
-INSERT INTO `tr_guest` (`id`, `GuestName`, `Admin`) VALUES
-(1, 'Haloo', 'ADMIN'),
-(2, 'Hasyidan', 'ADMIN'),
-(3, 'Test User 3', 'ADMIN'),
-(4, 'Adhyaksa', 'ADMIN'),
-(5, 'Oshino', 'ADMIN'),
-(6, 'Shurararararagi', 'ADMIN'),
-(7, 'Guest', 'ADMIN'),
-(8, 'Heyy', 'ADMIN'),
-(9, 'Tambahan', 'ADMIN'),
-(10, 'GuestASA', 'ADMIN'),
-(11, 'ASASASA', 'ADMIN'),
-(12, 'Guest', 'ADMIN'),
-(13, 'Bebek', 'ADMIN'),
-(14, 'Guest', 'ADMIN'),
-(15, 'AdhyaksaZ', 'ADMIN'),
-(16, 'Baru1', 'ADMIN'),
-(17, 'Baru2', NULL);
-
---
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tr_guest`
+-- Indeks untuk tabel `tr_guest`
 --
 ALTER TABLE `tr_guest`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tr_guest`
+-- AUTO_INCREMENT untuk tabel `tr_guest`
 --
 ALTER TABLE `tr_guest`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
