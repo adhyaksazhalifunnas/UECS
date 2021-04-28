@@ -19,8 +19,8 @@ namespace ListQueueDatabase
 
         private void btn_Admin_Click(object sender, EventArgs e)
         {
-            var AdminMenu = new AdminMenu();
-            AdminMenu.Show();
+            var AdminLogin = new AdminLogin();
+            AdminLogin.Show();
             this.Hide();
         }
 

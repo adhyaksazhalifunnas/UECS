@@ -57,3 +57,5 @@ E:\C#\UTSPBO2\ListQueueDatabase\ListQueueDatabase\bin\Debug\System.Runtime.Compi
 E:\C#\UTSPBO2\ListQueueDatabase\ListQueueDatabase\bin\Debug\MySql.Data.xml
 E:\C#\UTSPBO2\ListQueueDatabase\ListQueueDatabase\bin\Debug\MySql.Web.xml
 E:\C#\UTSPBO2\ListQueueDatabase\ListQueueDatabase\obj\Debug\ListQueueDatabase.exe.config
+E:\C#\UTSPBO2\ListQueueDatabase\ListQueueDatabase\obj\Debug\ListQueueDatabase.AdminLogin.resources
+E:\C#\UTSPBO2\ListQueueDatabase\ListQueueDatabase\obj\Debug\ListQueueDatabase.AdminRegister.resources

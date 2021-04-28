@@ -18,6 +18,7 @@ namespace ListQueueDatabase
         {
             InitializeComponent();
         }
+        
 
         private void btn_QueueCall_Click(object sender, EventArgs e)
         {
@@ -79,6 +80,82 @@ namespace ListQueueDatabase
         private void AdminMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            string MyConnectionString = "Server=localhost;Database=QueueBase;Uid=root; Pwd=;";
+            if (MessageBox.Show("Benar akan me-reset data?\n(Data akan dimulai ulang dari guest pertama)", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    MySqlConnection conn = new MySqlConnection(MyConnectionString);
+                    MySqlCommand cmd;
+                    conn.Open();
+                    try
+                    {
+                        cmd = conn.CreateCommand();
+                        cmd.CommandText = "UPDATE Tr_Guest SET Admin = NULL WHERE Admin = ADMIN";
+                        cmd.ExecuteNonQuery();
+                        LabelAntrian.Text = "Antrian No: ";
+                        LabelGuestName.Text = "";
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                    finally
+                    {
+                        if (conn.State == ConnectionState.Open)
+                        {
+                            conn.Close();
+                        }
+                    }
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine(error.ToString());
+                }
+            }
+            
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            string MyConnectionString = "Server=localhost;Database=QueueBase;Uid=root; Pwd=;";
+            if (MessageBox.Show("Benar akan menghapus data?\n(Semua data pada database Guest akan menghilang)", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    MySqlConnection conn = new MySqlConnection(MyConnectionString);
+                    MySqlCommand cmd;
+                    conn.Open();
+                    try
+                    {
+                        cmd = conn.CreateCommand();
+                        cmd.CommandText = "TRUNCATE TABLE Tr_Guest";
+                        cmd.ExecuteNonQuery();
+                        LabelAntrian.Text = "Antrian No: ";
+                        LabelGuestName.Text = "";
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                    finally
+                    {
+                        if (conn.State == ConnectionState.Open)
+                        {
+                            conn.Close();
+                        }
+                    }
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine(error.ToString());
+                }
+            }
+            
         }
     }
 }

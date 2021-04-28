@@ -33,11 +33,12 @@ namespace ListQueueDatabase
             this.GuestNameTxt = new System.Windows.Forms.TextBox();
             this.btn_Queue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelGuestMenu = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_Back
             // 
-            this.btn_Back.Location = new System.Drawing.Point(159, 186);
+            this.btn_Back.Location = new System.Drawing.Point(433, 219);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(75, 23);
             this.btn_Back.TabIndex = 5;
@@ -48,18 +49,17 @@ namespace ListQueueDatabase
             // GuestNameTxt
             // 
             this.GuestNameTxt.AcceptsTab = true;
-            this.GuestNameTxt.Location = new System.Drawing.Point(134, 6);
+            this.GuestNameTxt.Location = new System.Drawing.Point(195, 98);
             this.GuestNameTxt.Name = "GuestNameTxt";
-            this.GuestNameTxt.Size = new System.Drawing.Size(100, 20);
+            this.GuestNameTxt.Size = new System.Drawing.Size(214, 20);
             this.GuestNameTxt.TabIndex = 4;
-            this.GuestNameTxt.Text = "Guest";
             this.GuestNameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn_Queue
             // 
-            this.btn_Queue.Location = new System.Drawing.Point(134, 32);
+            this.btn_Queue.Location = new System.Drawing.Point(195, 124);
             this.btn_Queue.Name = "btn_Queue";
-            this.btn_Queue.Size = new System.Drawing.Size(100, 73);
+            this.btn_Queue.Size = new System.Drawing.Size(214, 38);
             this.btn_Queue.TabIndex = 3;
             this.btn_Queue.Text = "QUEUE";
             this.btn_Queue.UseVisualStyleBackColor = true;
@@ -68,22 +68,34 @@ namespace ListQueueDatabase
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(73, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Masukkan Nama Anda";
             // 
+            // labelGuestMenu
+            // 
+            this.labelGuestMenu.AutoSize = true;
+            this.labelGuestMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGuestMenu.Location = new System.Drawing.Point(12, 9);
+            this.labelGuestMenu.Name = "labelGuestMenu";
+            this.labelGuestMenu.Size = new System.Drawing.Size(240, 37);
+            this.labelGuestMenu.TabIndex = 15;
+            this.labelGuestMenu.Text = "GUEST MENU";
+            // 
             // GuestMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 214);
+            this.ClientSize = new System.Drawing.Size(520, 254);
+            this.Controls.Add(this.labelGuestMenu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.GuestNameTxt);
             this.Controls.Add(this.btn_Queue);
             this.Name = "GuestMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GuestMenu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GuestMenu_FormClosed);
             this.ResumeLayout(false);
@@ -97,5 +109,6 @@ namespace ListQueueDatabase
         private System.Windows.Forms.TextBox GuestNameTxt;
         private System.Windows.Forms.Button btn_Queue;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelGuestMenu;
     }
 }
